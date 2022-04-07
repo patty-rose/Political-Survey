@@ -6,8 +6,41 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Political Meter</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Are you conservative, moderate, or liberal?!</h1>
+    <h2>answer the questions below to find out!</h2>
+    <form id="pol">
+      <label for="cars">Choose a car:</label>
+      <select class="form-control" id="cars">
+        <option value="1">sedan</option>
+        <option value="2">station wagon</option>
+        <option value="3">truck</option>
+        <option value="4">electric</option>
+      </select>
+      <label for="wake">What time of day do you prefer to wake up?</label>
+      <select class="form-control" id="wake">
+        <option value="1">5 am</option>
+        <option value="2">9 am</option>
+        <option value="3">noon</option>
+        <option value="4">3 pm</option>
+      </select>    
+      <label for="coffee">How do you like your coffee?</label>
+      <select class="form-control" id="coffee">
+        <option value="1">black</option>
+        <option value="2">with cream</option>
+        <option value="3">with sugar</option>
+        <option value="4">with cream and sugar</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="results">
+      <h1 id="conservative">YOU'RE CONSERVATIVE</h1>
+      <h1 id="moderate">YOU'RE MODERATE</h1>
+      <h1 id="liberal">YOU'RE LIBERAL</h1>
+    </div>
+  </div>
 </body>
 </html>
