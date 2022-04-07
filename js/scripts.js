@@ -6,9 +6,9 @@ $(document).ready(function() {
     const wake = $("#wake").val();
     const coffee = $("#coffee").val();
     
-    if (cars === "4" && wake === "4" && coffee === "4") {
+    if (cars === "4" && wake === "4" && coffee === "4" || cars === "2") {
       $("#liberal").show();
-    } else if (cars === "3" && wake == "3" && coffee === "3") {
+    } else if (cars === "1" && wake == "2" && coffee === "3") {
       $("#moderate").show();
     } else {
       $("#conservative").show();
